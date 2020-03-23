@@ -1,0 +1,19 @@
+.primary-1{
+    /* color: #00b894 !important; */
+    background-color: #2d3436;
+}
+.primary-2 {
+    color: #81ecec;
+}
+.centrar{
+    margin: auto;
+    display: block;
+    /* border-color: black; */
+    border-radius: 10px;
+}
+.btn-color-gren{
+
+    color: #fff;
+    background-color: #00b894;
+    border-color: #007bff;
+}
