@@ -9,27 +9,26 @@
 </head>
 
 <body >
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="row m-0 primary-1 justify-content-center vh-100 primary-2">
             <div class="col-12 text-center primary-2 mt-5">
-                <h1>WhatsApp Incognito</h1>
+                <h1>WhatsApp Incógnito</h1>
                 <div id="mostar"></div>
             </div>
             <div class="col-10 text-center">
-                <label for="minumero">Numero telefonico</label>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="minumero" id="minumero">
+                <label for="minumero">Numero telefónico</label>
+                <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="minumero" id="minumero" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
             </div>
-            <!-- <div class="col-2"></div> -->
             <div class="col-10 text-center">
-                <label for="TextoBody" class="text-center">Mensaje</label>
-                <textarea name="TextoBody" id="mimensaje" cols="35" rows="3" class="centrar"></textarea>
-            </div>
-            
-            <div class="col-12 my-3">
+                <label for="TextoBody" class="text-center">Mensaje</label></br>
+                <textarea name="TextoBody" id="mimensaje" cols="35" rows="3"></textarea><br><br>
                 <button type="button" class="btn btn-color-gren centrar" id="enviar">Enviar</button>
             </div>
+            <!-- <div class="col-12">
+                <button type="button" class="btn btn-color-gren centrar" id="enviar">Enviar</button>
+            </div> -->
         </div>
-    </div>
+    <!-- </div> -->
 </body>
 <script src="app.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
