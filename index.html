@@ -3,35 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>WhatsApp Incognito</title>
 </head>
 
-<body >
-    <!-- <div class="container"> -->
-        <div class="row m-0 primary-1 justify-content-center vh-100 primary-2">
-            <div class="col-12 text-center primary-2 mt-5">
-                <h1>WhatsApp Incógnito</h1>
-                <div id="mostar"></div>
+
+<body>
+    <!-- <header>
+        <div class="container">
+            <div class="flex flex-around d-flex justify-content-center">
+                <h1><i class="fab fa-whatsapp"></i></h1>
             </div>
-            <div class="col-10 text-center">
-                <label for="minumero">Numero telefónico</label>
-                <input type="tel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="minumero" id="minumero" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-            </div>
-            <div class="col-10 text-center">
-                <label for="TextoBody" class="text-center">Mensaje</label></br>
-                <textarea name="TextoBody" id="mimensaje" cols="35" rows="3" class="centrar"></textarea><br><br>
-                <button type="button" class="btn btn-color-gren centrar" id="enviar">Enviar</button>
-            </div>
-            <!-- <div class="col-12">
-                <button type="button" class="btn btn-color-gren centrar" id="enviar">Enviar</button>
-            </div> -->
         </div>
-    <!-- </div> -->
+    </header> -->
+    <div class="flex-column container">
+        <div class="flex-column-2 d-flex justify-content-center content my-5">
+            <div class="flex-column-2 containerr my-4">
+                <div class="text-center text-tamano">
+                    <h1><i class="fab fa-whatsapp"></i>
+                    <h1>WhatsApp Incognito</h1>
+                    <p>Envía mensajes de Whatsapp sin guardar su contacto</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <!-- <div class="d-flex"> -->
+                            <!-- Material input -->
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="md-form d-flex">
+                                        <input type="number" id="prefijo" class="prefijo form-control" value="57">
+                                        <label for="prefijo">Prefijo</label>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="md-form d-flex">
+                                        <input type="number" id="minumero" class="numero form-control">
+                                        <label for="minumero">Numero</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Material textarea-->
+                                    <div class="md-form">
+                                        <textarea id="mimensaje" class="md-textarea form-control" rows="3"></textarea>
+                                        <label for="mimensaje">Mensaje (opcional)</label>
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- </div> -->
+                    
+                </div>
+                <!-- <div class="d-flex"> -->
+                
+                <!-- </div> -->
+                <div class="d-flex justify-content-center">
+                    <button type="submit" id="submit" class="boton-enviar btn aqua-gradient"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 text-xs" style="color: chartreuse;">
+            Desarrollo: <b><a target="_blank" href="#">DJ Alberth</a></b>
+        </p>
+    </div>
 </body>
-<script src="app.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<script src="https://kit.fontawesome.com/1e268974cb.js" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/helpers.js"></script>
 </html>
