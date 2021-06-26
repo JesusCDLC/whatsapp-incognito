@@ -1,5 +1,4 @@
 # whatsapp-incognito
-Enviar mensajes a números sin necesidad de que esten en la lista de contactos.
-
+Enviar mensajes a cualquier numero registrado en WhatsApp sin necesidad que este regitrado en tu lista de contactos.
 Vista previa:
-https://mremperathor.github.io/whatsapp-incognito/
+https://jacdelacruz.github.io/whatsapp-incognito/
